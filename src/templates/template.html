@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Uprzejmy kreator e-maili</title>
+      <link rel="stylesheet" href="src/css/style.css">
+      
+      <script src="https://kit.fontawesome.com/650fb94032.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+      <canvas id="canvas-basic"></canvas>
+      <div class="wrap">
+            <h1 class="wrap-topic">Uprzejmy kreator e-maili</h1>
+            <div class="container">
+                  <label for="adress" class="container-label">Do:</label>
+                  <section id="adress" class="container-borders">
+                        <input placeholder="Przykład@mail.com" id="emailText" class="container-name" type="email">
+                  </section>
+                  <label for="topic" class="container-label">Temat:</label>
+                  <section id="topic" class="container-borders">
+                        <input placeholder="Przykłdowy teamt wiadomości" id="topicText" class="container-name" type="text">
+                  </section>
+                  <label for="body" class="container-label">Ciało</label>
+                  <section class="container-borders">
+                        <div class="container-wrapper disabled-choice" id="greetings"></div>
+                        <div class="container-wrapper disabled-choice" id="followups"></div>
+                        <textarea placeholder="Tutaj jest treść Twojej wiadomości"
+                              class="container-name chosen container-textarea" id="" rows="4"></textarea>
+                        <div class="container-wrapper disabled-choice" id="farewells"></div>
+                        <div class="container-wrapper disabled-choice " id="conclusions"></div>
+                        <input id="" placeholder="Twój podpis/imię i nazwisko" class="container-name chosen" type="text">
+                  </section>
+
+            </div>
+            <section class="container-wrapper">
+                  <button id="reset">Zresetować wszystko</button>
+                  <button id="send">Wysłać</button>
+                  <button id="copy">Skopiuj do schowka</button>
+            </section>
+      </div>
+</body>
+
+</html>
